@@ -1,0 +1,145 @@
+.banner-img {   
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+}
+
+.mb-7 {
+    margin-bottom: 7rem !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.bg-default {
+    background-color: #FFF;
+}
+
+.img-size-5 {
+    max-width: 5rem;
+    min-width: 5rem;
+}
+
+.display-6 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+header .bg-light {
+    background-color: #FFF;
+    height: 8rem;
+}
+
+.navbar-logo {
+    min-width: 18rem;
+    max-width: 18rem;
+    max-height: 7rem;
+    /* border: 1px double #c1c1c1; */
+    padding: 1px;
+    /* box-shadow: 0 2px 3px 0; */
+}
+
+.search-career-paths {
+    position: absolute;
+    top: 9.6rem;
+    width: 27rem;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 985px) {
+    .search-career-paths {
+        top: 14rem;
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .search-career-paths {
+        top: 14rem;
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .search-career-paths {
+        top: 10rem;
+        width: 27rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .search-career-paths {
+        top: 10rem;
+        width: 20rem;
+    }
+}
+
+/* No greater than 900px, no less than 400px */
+@media only screen and (max-width:412px) and (min-width:350px) {
+    .search-career-paths {
+        width: 20rem;
+        top: 14rem;
+    }
+}
+
+@media only screen and (max-width: 349px) {
+    .search-career-paths {
+        width: 15rem;
+        top: 14rem;
+    }
+}
+
+.search-career-paths ul.list-group {
+    height: 12rem;
+    overflow: auto;
+}
+
+.search-career-paths ul.list-group li {
+    cursor: pointer;
+}
+
+.search-career-paths ul.list-group li:hover {
+    background-color: #C5C6C9;
+}
+
+.highlight {
+    background: #E5E7E9;
+}
+
+
+/* code for ribbin */
+.ribbon {
+    background: #FF004B;
+    /* This allows us to use absolute positioning inside the element */
+    position: relative;
+    /* Setting a width plus padding makes this element expand past the width of the containing element. */
+    width: 100%;
+    padding-left: 50px; /* 50px equals ribbon widths of 30px and article padding of 20px */
+    padding-right: 50px;
+    /* Negative margin positions the ribbon element outside the containing element, creating the illusion of wrapping around it. */
+    margin-left: -40px;
+
+    color: #FFF;
+  }
+  /* These are the two ribbon "curls". The :before curl is placed to the left, :after to the right */
+  .ribbon:before, .ribbon:after {
+    border-color: #444444;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 15px; /* This sets the height of the curls, making it half the width to angle the curls more. */
+    content: ''; /* Tells the browser to actually generate the pseudo element */
+    position: absolute;
+  }
+  .ribbon:before {
+    /* Position the :before element to the left and below the ribbon element */
+    left: 0;
+    bottom: -15px; /* Equal to the height of the curl */
+    border-left: 30px solid transparent; /* Makes the curl slant right */
+  }
